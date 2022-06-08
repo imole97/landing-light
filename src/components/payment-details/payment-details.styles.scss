@@ -1,0 +1,208 @@
+.payment-info-container .row{
+    align-items: center;
+}
+
+.payment-card {
+    background-image: linear-gradient(to top right, #da6e92 25%, #6f4bcf 75%);
+    width: 27rem;
+    margin-top: 3rem;
+    border-radius: 5px;
+
+    .card-content {
+        position: relative;
+        color: #fff;
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        height: 100%;
+
+        .fa-wifi{
+            padding: 0 .5rem;
+            transform: rotate(90deg);
+            font-size: 20px;
+        }
+
+        .card-info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 2rem;
+
+            img {
+                width: 50px;
+                margin-bottom: .5rem;
+            }
+
+            p{
+                font-size: 14px;
+                font-weight: 600;
+            }
+
+            #expiration-date{
+                font-size: 12px;
+            }
+            #card-number{
+                letter-spacing:3px;
+            }
+
+        }
+
+        .card-logo{
+            align-self:flex-end;
+            position: absolute;
+            right: 0;
+            padding: 1rem 2.5rem;
+
+            h1 {
+                font-size:50px;
+                margin: 0;
+            }
+
+            .mastercard-icon{
+                display: inline-block;
+                height: 1em;
+                isolation: isolate;
+                position: relative;
+                line-height: 1em;
+                vertical-align: middle;
+                width: 1.611em;
+            }
+
+            .mastercard-icon::before,
+            .mastercard-icon::after {
+                    border-radius: .5em;
+                    content: "";
+                    display: inline-block;
+                    height: 1em;
+                    position: absolute;
+                    width: 1em;
+            }
+
+            .mastercard-icon::before {
+                background-color: #eb001b;
+                opacity: .5;
+                left: 0;
+                top: 0;
+            }
+            .mastercard-icon::after {
+                background-color: #f79e1b;
+                right: 0;
+                top: 0;
+                z-index: -1;
+            }
+
+        }
+    }
+}
+
+.form-input{
+  
+    .row {
+      margin: 0 auto;
+      justify-content: space-between;
+        p{
+            margin: 0 1rem;
+        }  
+    }
+}
+.form-input form{
+    padding: 0 !important;
+}
+.form-input form .card-input{
+    margin: 1rem 0;
+    outline: none;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid gray;
+    width: 100%;
+    background-color: rgb(232, 238, 238);
+}
+input:focus::placeholder {
+    color: transparent;
+  }
+  #card-consent-check{
+      margin-right: 10px;
+      margin-left: 1.2rem;
+  }
+
+   @media screen and (max-width: 1200px) and (min-width: 735px) {
+      .payment-info-container{
+          .row{
+              flex-direction: column;
+              width: 100%;
+              margin: 0 auto;
+
+              .left{
+                  width: 100%;
+                  margin: 1rem auto;
+                  .payment-card{
+                      margin: 1rem auto;
+                  }
+              }
+              .right{
+                  width: 100%;
+                 .form-input .row .col-md-6{
+                     width: 100%;
+                 }
+                 .form-input .row p{
+                     margin: 0;
+                 }
+                 .form-input form .card-deets{
+                    margin: 0 0 0 0;
+                 }
+              }
+              
+          }
+      }
+  }
+
+  @media (max-width: 736px) {
+      .payment-card{
+          width: 17rem;
+          height: 10rem;
+          margin: 1rem auto 0;
+      }
+      .card-details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 0 !important;
+        line-height: 8px;
+        padding-top: 1rem;
+        img{
+            width: 30px !important;
+            margin: 0.3rem 0 !important;
+        }
+        p{
+            font-size: 8px !important;
+            font-weight: 600;
+        }
+        #expiration-date{
+            font-size: 8px !important;
+        }
+        #card-number{
+          letter-spacing: 2px !important;
+        }
+      }
+      .card-logo{
+          padding: .5rem !important;
+      }
+      .form-input{
+          margin-top: 1rem;
+          .row p{
+              margin: 0;
+          }
+          form .card-input{
+              padding: .5rem;
+          }
+      }
+      .checkbox{
+        text-align: left;
+        margin-left: .5rem;
+        #card-consent-check{
+            margin-right: 5px;
+            margin-left: 0; 
+        }
+      }
+    
+  }

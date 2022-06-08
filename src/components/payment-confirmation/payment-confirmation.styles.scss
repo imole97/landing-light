@@ -1,0 +1,19 @@
+.confirmation-content{
+    .row{
+        .right{
+            text-align: end;
+            p{
+                font-size: 20px;
+                font-weight: 700;
+            }
+        }
+    }
+}
+@media (max-width: 736px) {
+   .content .row{
+        flex-direction: column-reverse;
+        .right{
+            text-align: center;
+        }
+    }
+}

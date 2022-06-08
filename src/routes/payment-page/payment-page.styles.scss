@@ -1,0 +1,36 @@
+.payment-page{
+margin:3rem;
+}
+.payment-page-row{
+display: flex;
+justify-content: space-between;
+.text p{
+    color: gray;
+}
+}
+.payment-info-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: palevioletred; 
+}
+.line{
+    border-bottom: 1px solid gray;
+    margin: 1rem auto 2rem;
+}
+@media  (max-width: 1200px)  {
+    .payment-page{
+        margin: 3rem 0;
+    }
+}
+@media (max-width: 736px) {
+    .payment-page{
+        margin: 3rem 0;
+    }
+   .payment-page-row{
+       flex-direction: column;
+   }
+   svg{
+       width: 80px;
+   }
+}

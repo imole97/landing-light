@@ -1,0 +1,36 @@
+.navbar{
+   margin: 1rem;
+   position: relative;
+   position: relative;
+}
+.navbar-expand-lg .navbar-collapse{
+    justify-content: flex-end !important;
+}
+.navbar ul li{
+    margin: 0 1rem;
+}
+.nav-link{
+    color: #000000 !important;
+}
+.navbar{
+    margin: 0;
+}
+.navbar-light .navbar-toggler {
+    border: none;
+    outline: none;
+    box-shadow: none !important;
+}
+
+@media (max-width: 900px) {
+    .navbar-expand-lg{
+        justify-content: flex-start !important;
+    }
+    .navbar-light .navbar-toggler {
+        position: absolute;
+        right: .5rem;
+        top: 1rem;
+    }
+    .navbar ul{
+        margin-top: 4rem;
+    }
+}

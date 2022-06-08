@@ -1,0 +1,14 @@
+.brief-container{
+    margin: 1rem auto 3rem;
+    .row{
+        justify-content: space-between;
+        .left{
+            span{
+                color: gray;
+            }
+        }
+        .right{
+            text-align: end;
+        }
+    }
+}
