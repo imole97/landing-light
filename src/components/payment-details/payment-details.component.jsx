@@ -32,7 +32,7 @@ const PaymentDetails = () => {
                     <div className="payment-card">
                         <div className="card-content">
                             <i className="fas fa-wifi"></i>
-                            <div className="card-info">
+                            <div className="card-details">
                                 <p>CARD NUMBER</p>
                                 <p id='card-number'>4324 5433 9382 1030</p>
                                 <img src={chip} alt="" srcSet="" />
