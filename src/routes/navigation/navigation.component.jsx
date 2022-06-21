@@ -1,7 +1,7 @@
 import { Link, Outlet } from 'react-router-dom'
 import './navigation.styles.scss'
 import profileImg from '../../assets/profileImg.png'
-import "../../../node_modules/bootstrap/dist/js/bootstrap.min.js"
+// import "../../../node_modules/bootstrap/dist/js/bootstrap"
 
 const Navigation = () => {
     return(
